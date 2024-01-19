@@ -44,6 +44,7 @@ public interface AportacionRepository extends JpaRepository<Aportacion, Long> {
             """)
     List<DetallesAportacionResponseDTO> getAllDetalleAportacion(@Param("id") Long id);
 
+    //este
     @Query("""            
             SELECT d
             FROM DetalleAportacion d JOIN TipoAlimento t ON d.tipoAlimento = t.id JOIN KilosDisponibles k ON t.id = k.tipoAlimento

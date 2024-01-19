@@ -136,7 +136,7 @@ public class AportacionService {
         }
         return Optional.empty();
     }
-
+//este
     public Optional<Aportacion> cambiarKilosDetalle(DetalleAportacion detalle, double kgNuevos){
 
         double result = kgNuevos - detalle.getCantidadKg();
